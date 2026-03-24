@@ -6,7 +6,10 @@
 
 @font-face {
     font-family: "Monocraft";
-    src: url("Monocraft-ttf/Monocraft.ttf");
+    src: url("Monocraft.woff2") format("woff2"),
+         url("Monocraft.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
