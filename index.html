@@ -70,24 +70,58 @@
                 <div class="item">
                     <img src="Icons/coding.png" alt="Programming Icon">
                     <p>Code</p>
+                    <div class="tooltip">
+                        <p class="tooltip-title code">Programming</p>
+                        <p class="desc">
+                            For the past 5 years, I've practiced and learned
+                            many programming languages including C++, Python, 
+                            and Linux, which are all apart of my studies while 
+                            in university.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="item">
                     <img src="Icons/front-development.png" alt="Laptop Icon">
                     <p>Web</p>
+                    <div class="tooltip">
+                        <p class="tooltip-title web">Frontend Development</p>
+                        <p class="desc">
+                            Before starting my university studies, I signed up 
+                            for a private tutoring mainly for frontend development.
+                            I studied the basics, even got to use React for a 
+                            little while.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="item">
                     <img src="Icons/music.png" alt="Note Icon">
                     <p>Music</p>
+                    <div class="tooltip">
+                        <p class="tooltip-title music">Musical Hobbies</p>
+                        <p class="desc">
+                            To balance out my main programming focus, I picked up 
+                            a few other hobbies, but music stood out the most. Currently, 
+                            I can play the flute, piano, violin, trumpet, saxophone, 
+                            and many more in which I won't mention here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Icons/judo.png" alt="Martial Arts Icon">
+                    <p>Bout</p>
+                    <div class="tooltip">
+                        <p class="tooltip-title bout">Martial Arts</p>
+                        <p class="desc">
+                            Since I'm going to go on my own, I had to learn some 
+                            self-defence, so I learned Hapkido as my main art. I 
+                            also did a little Taekwondo, but only a little.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <!-- <ul>
-                <li>Programming: C++, Python, Linux</li>
-                <li>Frontend: HTML, CSS, JavaScript</li>
-                <li>Creative: Music (Flute, Piano, Saxophone)</li>
-            </ul> -->
         </section>
 
         <!-- This is the Project block -->
@@ -95,28 +129,7 @@
             <h2>PROJECTS</h2>
 
             <div class="quests">
-
-                <div class="quest">
-                    <h3>Minesweeper</h3>
-                    <p>Developed a console-based Minesweeper game using C++.</p>
-                </div>
-
-                <div class="quest">
-                    <h3>Linux Interface</h3>
-                    <p>Created custom shell scripts for system administration.</p>
-                </div>
-
-                <div class="quest">
-                    <h3>Portfolio</h3>
-                    <p>Built a responsive personal portfolio website.</p>
-                </div>
-
             </div>
-            <!-- <ol>
-                <li>Minesweeper (C++) - Developed a console-based version of the Minesweeper game.</li>
-                <li>Linux Interface (Shell Scripting) - Created a custom shell script for system administration.</li>
-                <li>Portfolio (Frontend) - Created a responsive portfolio website.</li>
-            </ol> -->
         </section>
 
         <!-- This is the Experience block -->
@@ -172,13 +185,15 @@
         </section>
 
     </div>
+    <div id="global-tooltip" class="tooltip-global"></div>
+    <button id="music-toggle">🎵</button>
+    <audio id="bg-music" loop>
+        <source src="audio/WetHands.mp3" type="audio/mpeg">
+    </audio>
 
     <footer>
-        <p>Last updated: March 2026</p>
+        <p>Last updated: April 2026</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
-
-
-
 </html>
