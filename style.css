@@ -617,9 +617,14 @@ footer p::after {
     line-height: 1.4;
   }
 
+  header {
+    position: relative;
+    padding: 10px;
+  }
+  
   header p {
     /* font-family: "Poppins", sans-serif; */
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
   }
 
