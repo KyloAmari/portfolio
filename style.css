@@ -549,6 +549,10 @@ footer p::after {
 /* === OTHER DEVICES === */
 
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+
   h1 {
     font-size: 20px;
   }

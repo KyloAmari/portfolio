@@ -48,9 +48,8 @@ function initHeader() {
 // <=============== SCROLL ===============>
 
 function initScroll() {
-
   if (window.innerWidth <= 768) return;
-  
+
   document.addEventListener(
     "wheel",
     (e) => {
@@ -95,10 +94,18 @@ function initTooltips() {
       const tooltipWidth = globalTooltip.offsetWidth || 300;
       const screenWidth = window.innerWidth;
 
-      let left = rect.right + 15;
-      if (left + tooltipWidth > screenWidth) {
-        left = rect.left - tooltipWidth - 15;
+      let left;
+
+      if (window.innerWidth <= 768) {
+        left = (screenWidth - tooltipWidth) / 2;
+        globalTooltip.style.top = rect.bottom + 20 + "px";
+      } else {
+        left = rect.right + 15;
+        if (left + tooltipWidth > screenWidth) {
+          left = rect.left - tooltipWidth - 15;
+        }
       }
+
       globalTooltip.style.left = left + "px";
       globalTooltip.classList.add("active");
     });
