@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
@@ -93,6 +94,8 @@ DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 =======
+=======
+>>>>>>> e565ab196fc332249b07c6d9d3fc07dc3b2e1af8
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
@@ -186,4 +189,7 @@ INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
+<<<<<<< HEAD
 >>>>>>> e565ab1 (Finalize Project)
+=======
+>>>>>>> e565ab196fc332249b07c6d9d3fc07dc3b2e1af8
