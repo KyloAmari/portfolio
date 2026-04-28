@@ -89,24 +89,24 @@ function initTooltips() {
 
       const rect = item.getBoundingClientRect();
 
-      globalTooltip.style.top = rect.top + rect.height / 2 + "px";
-
-      const tooltipWidth = globalTooltip.offsetWidth || 300;
-      const screenWidth = window.innerWidth;
-
-      let left;
-
       if (window.innerWidth <= 768) {
-        left = (screenWidth - tooltipWidth) / 2;
-        globalTooltip.style.top = rect.bottom + 20 + "px";
+        globalTooltip.style.top = "50%";
+        globalTooltip.style.left = "50%";
       } else {
-        left = rect.right + 15;
+        globalTooltip.style.top = rect.top + rect.height / 2 + "px";
+
+        const tooltipWidth = globalTooltip.offsetWidth || 300;
+
+        const screenWidth = window.innerWidth;
+
+        let left = rect.right + 15;
+
         if (left + tooltipWidth > screenWidth) {
           left = rect.left - tooltipWidth - 15;
         }
-      }
 
-      globalTooltip.style.left = left + "px";
+        globalTooltip.style.left = left + "px";
+      }
       globalTooltip.classList.add("active");
     });
   });
