@@ -586,6 +586,19 @@ footer p::after {
   .container {
     width: 95%;
   }
+
+  .tooltip-global {
+    left: 50% !important;
+    top: 50% !important;
+
+    transform: translate(-50%, -50%);
+
+    width: 85vw;
+    max-width: 300px;
+
+    max-height: 70vh;
+    overflow-y: auto;
+  }
 }
 
 @media (max-width: 480px) {
