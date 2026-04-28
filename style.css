@@ -18,6 +18,11 @@
   src: url("Poppins-VariableFont_wght.ttf");
 }
 
+html,body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html {
   scroll-padding-top: 120px;
 }
@@ -306,7 +311,7 @@ body {
 .tooltip-global {
   position: fixed;
   transform: translateY(-50%);
-  width: min(400px, 90vw);
+  width: min(300px, 85vw);
   padding: 20px;
   background: #1e1e1e;
   border: 3px solid #000;
@@ -567,13 +572,15 @@ footer p::after {
   }
 
   .inventory {
-    grid-template-columns: repeat(2, 100px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
   }
 
   .item {
     width: 100px;
-    height: 100px;
+    max-width: 120px;
+    aspect-ratio: 1 / 1;
+    height: auto;
   }
 
   .container {
@@ -606,7 +613,8 @@ footer p::after {
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   header p {
