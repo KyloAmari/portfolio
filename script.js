@@ -48,6 +48,9 @@ function initHeader() {
 // <=============== SCROLL ===============>
 
 function initScroll() {
+
+  if (window.innerWidth <= 768) return;
+  
   document.addEventListener(
     "wheel",
     (e) => {
